@@ -10,6 +10,7 @@ gem "bourbon"
 gem "flutie"
 gem "haml-rails"
 gem "sass", "~> 3.4.9"
+gem "bootstrap-sass", "~> 3.3.3"
 gem "sass-rails"
 gem "puma", "~> 2.10"
 gem "foreman", require: false

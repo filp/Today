@@ -1,0 +1,63 @@
+// Primary color
+$primary-color: #44d461;
+$primary-color-faded: desaturate(lighten($primary-color, 10%), 8%);
+
+// Secondary color (use sparingly)
+$secondary-color: #fce773;
+$secondary-color-faded: lighten(desaturate($secondary-color, 15%), 2%);
+
+// Text colors
+// Try to only use these as much as possible!
+$normal-text-color: #464646;
+$secondary-text-color: #b0b0b0;
+$unimportant-text-color: #c7c7c7;
+
+$link-color: $primary-color;
+
+$spacer-color: $secondary-text-color; // Look in mixins.css.scss
+
+// Warning: do not use this color anywhere else or
+// your hands will be tied to a pole with a MacBook charger cable
+$canvas-color: #f5f3f0;
+
+// Grays
+// Use these around the interface
+$semi-white: #fafafa;
+$clear-gray: #efefef;
+$bright-gray: #dadada;
+$normal-gray: #cecece;
+$medium-gray: #a5a5a5; // Prone to variation
+$dark-gray: #747474; // Prone to variation
+$black-gray: #232323;
+
+$extra-gray: #2e2d2b; // Use rarely
+
+// Borders
+$base-border-color: #e8e3df;
+
+$primary-border-color: darken($primary-color, 8%);
+$primary-border-color-faded: darken($primary-color-faded, 8%);
+
+// Typography:
+$font-family-sans-serif: "Source Sans Pro", opensans, "Helvetica Neue",
+                          arial, sans-serif;
+$font-size-base: 16px;
+
+$biggerer-text: 26px; // Use very sparingly
+$bigger-text: 22px; // Use very sparingly
+$normal-text: 16px;
+$small-text: 14px;
+$tiny-text: 12px; // Do not use this except for rare situations
+
+$light-font-weight: 300;
+$bold-font-weight: 600;
+$black-font-weight: 700; // DANGER! High boldage!
+
+// Radiuses
+$base-border-radius: 3px;
+$border-radius-rounded: 90px;
+
+// Grid
+$grid-gutter-width: 30px;
+$container-desktop: ((680px + $grid-gutter-width));
+$container-large-desktop: $container-desktop;
