@@ -11,10 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150304002151) do
+ActiveRecord::Schema.define(version: 20150304005714) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "tasks", force: :cascade do |t|
+    t.integer  "outcome",    default: 0, null: false
+    t.string   "label",                  null: false
+    t.integer  "user_id",                null: false
+    t.integer  "priority",   default: 1, null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  add_index "tasks", ["created_at"], name: "index_tasks_on_created_at", using: :btree
+  add_index "tasks", ["outcome"], name: "index_tasks_on_outcome", using: :btree
+  add_index "tasks", ["user_id"], name: "index_tasks_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.datetime "created_at",                     null: false
@@ -28,4 +41,5 @@ ActiveRecord::Schema.define(version: 20150304002151) do
   add_index "users", ["email"], name: "index_users_on_email", using: :btree
   add_index "users", ["remember_token"], name: "index_users_on_remember_token", using: :btree
 
+  add_foreign_key "tasks", "users"
 end
