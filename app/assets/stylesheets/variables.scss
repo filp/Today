@@ -1,9 +1,9 @@
 // Primary color
 $primary-color: #44d461;
-$primary-color-faded: desaturate(lighten($primary-color, 10%), 8%);
+$primary-color-faded: #6387a6;
 
 // Secondary color (use sparingly)
-$secondary-color: #fce773;
+$secondary-color: #52668b;
 $secondary-color-faded: lighten(desaturate($secondary-color, 15%), 2%);
 
 // Text colors
@@ -16,9 +16,9 @@ $link-color: $primary-color;
 
 $spacer-color: $secondary-text-color; // Look in mixins.css.scss
 
-// Warning: do not use this color anywhere else or
-// your hands will be tied to a pole with a MacBook charger cable
-$canvas-color: #f5f3f0;
+// Body stuff
+$body-bg: #fff;
+$text-color: #300;
 
 // Grays
 // Use these around the interface
