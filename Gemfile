@@ -15,6 +15,7 @@ gem "sass-rails"
 gem "puma", "~> 2.10"
 gem "foreman", require: false
 gem "jquery-rails"
+gem "clearance"
 
 group :development do
   gem "spring"
