@@ -1,0 +1,21 @@
+.splash__hero {
+  padding: 80px 10px;
+  text-align: center;
+}
+
+.splash__awesome-copy {
+  font-size: $biggerer-text * 1.2;
+  font-weight: lighter;
+
+  color: $secondary-color;
+
+  margin-bottom: 6px;
+}
+
+.splash__awesome-sub-copy {
+  color: $primary-color;
+}
+
+.splash__cta {
+  padding: 35px 0;
+}

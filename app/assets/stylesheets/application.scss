@@ -9,3 +9,8 @@
         "bootstrap/type",
         "bootstrap/grid";
 
+// Base & core styles
+@import "groundwork";
+
+// Styles for individual component types
+@import "components/*";
