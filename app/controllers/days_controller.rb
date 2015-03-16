@@ -1,7 +1,5 @@
 class DaysController < ApplicationController
   def index
-    @day = Day.today(current_user)
-
-    raise
+    @days = Day.collect(6, current_user)
   end
 end

@@ -51,4 +51,14 @@ class Day
       datetime: 1.day.ago.to_date
     )
   end
+
+  def self.at(date, user)
+    Day.new(
+      user:     user,
+      datetime: date
+    )
+  end
+
+  def self.collect(number, user)
+  end
 end

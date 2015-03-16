@@ -3,20 +3,11 @@ require "rails_helper"
 describe Day do
   let(:user) { double(User, id: 1, tasks: []) }
 
-  describe "instance methods" do
-    subject { Day.new }
+  subject { Day.new }
 
-    it { should respond_to(:user)   }
-    it { should respond_to(:tasks)  }
-    it { should respond_to(:reload) }
-  end
-
-  describe "class methods" do
-    subject { described_class }
-
-    it { should respond_to(:today)     }
-    it { should respond_to(:yesterday) }
-  end
+  it { should respond_to(:user)   }
+  it { should respond_to(:tasks)  }
+  it { should respond_to(:reload) }
 
   describe "#today?" do
     context "when #datetime is today" do
@@ -48,5 +39,15 @@ describe Day do
       it { should_not be_yesterday }
       it { should_not be_today     }
     end
+  end
+
+
+  describe "class methods" do
+    subject { described_class }
+
+    it { should respond_to(:today)     }
+    it { should respond_to(:yesterday) }
+    it { should respond_to(:at)        }
+    it { should respond_to(:collect)   }
   end
 end
