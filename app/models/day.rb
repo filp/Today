@@ -39,23 +39,17 @@ class Day
   end
 
   def self.today(user)
-    Day.new(
-      user:     user,
-      datetime: Date.today
-    )
+    at(Date.today, user)
   end
 
   def self.yesterday(user)
-    Day.new(
-      user:     user,
-      datetime: 1.day.ago.to_date
-    )
+    at(1.day.ago, user)
   end
 
   def self.at(date, user)
     Day.new(
       user:     user,
-      datetime: date
+      datetime: date.to_date
     )
   end
 
