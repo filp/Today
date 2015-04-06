@@ -1,10 +1,16 @@
 .app__header {
-  margin-bottom: 20px;
-  text-align: center;
+  margin-bottom: 60px;
 }
-
 
 .app__header-branding {
   font-size: $biggerer-text;
   color:     $primary-color;
+
+  font-weight: bold;
+}
+
+.app__header-greeting {
+  font-size: $small-text;
+  color:     $secondary-text-color;
+  font-weight: lighter;
 }

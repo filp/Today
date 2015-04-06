@@ -1,1 +1,8 @@
-
+.day-views
+  .row
+    .col-sm-4
+      .day-view.day-view--yesterday
+        = render @yesterday
+    .col-sm-8
+      .day-view.day-view--today
+        = render @today

@@ -48,6 +48,5 @@ describe Day do
     it { should respond_to(:today)     }
     it { should respond_to(:yesterday) }
     it { should respond_to(:at)        }
-    it { should respond_to(:collect)   }
   end
 end

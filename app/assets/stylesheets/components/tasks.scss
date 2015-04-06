@@ -1,0 +1,35 @@
+$task-height: 30px;
+
+.task {
+  &:not(:last-child) {
+    margin-bottom: 3px;
+  }
+
+  height: $task-height;
+  line-height: $task-height;
+}
+
+.task__outcome {
+  float: left;
+  position: relative;
+
+  top:    10px;
+  width:  10px;
+  height: 10px;
+
+  overflow:  hidden;
+  color:     transparent;
+  font-size: $tiny-text;
+  border-radius: 100%;
+
+  .task--incomplete & {
+    box-shadow: 0 0 0 1px $incomplete-color;
+    background-color: transparent;
+  }
+  .task--blocked  & { background-color: $blocked-color; }
+  .task--complete & { background-color: $complete-color; }
+}
+
+.task__label {
+  margin-left: 20px;
+}

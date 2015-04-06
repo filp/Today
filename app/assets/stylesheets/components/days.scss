@@ -1,0 +1,42 @@
+$day-today-color: $primary-color;
+
+.day {
+  border-radius: $base-border-radius;
+  padding: 20px;
+}
+
+  .day--today {
+    box-shadow: 0 0 0 1px $clear-gray;
+  }
+
+  .day--yesterday {
+    background-color: $semi-white;
+  }
+
+.day__heading {
+  font-weight: bold;
+  color: $secondary-text-color;
+
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+
+  .day--today & {
+    color: $primary-color;
+  }
+}
+
+  .day__date {
+    font-size: $bigger-text;
+  }
+
+.day-views {}
+
+  .day-view--yesterday {
+    @include transition(opacity .3s ease);
+
+    opacity: .6;
+
+    &:hover {
+      opacity: 1;
+    }
+  }

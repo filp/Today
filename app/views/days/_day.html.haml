@@ -1,0 +1,15 @@
+.day{class: day_class(day)}
+  .day__heading
+    .day__date
+      - if day.today?
+        Today
+      - elsif day.yesterday?
+        Yesterday
+      - else
+        #{Date::DAYNAMES[day.datetime.wday]}, #{day.datetime}
+  .day__content
+    .day__tasks
+      = render day.tasks
+
+      - if day.today?
+        = render "tasks/form"

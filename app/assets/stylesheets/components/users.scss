@@ -1,0 +1,11 @@
+.app__current-user {
+  text-align:  right;
+}
+
+  .app__current-user__actions {
+    font-size: $tiny-text;
+
+    a {
+      color: $secondary-text-color;
+    }
+  }

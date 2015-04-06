@@ -1,6 +1,6 @@
 // Primary color
-$primary-color: #a5a5a5;
-$primary-color-faded: #6387a6;
+$primary-color: #00b36b;
+$primary-color-faded: #51b58d;
 
 // Secondary color (use sparingly)
 $secondary-color: #52668b;
@@ -32,6 +32,13 @@ $black-gray: #232323;
 
 $extra-gray: #2e2d2b; // Use rarely
 
+// Task colors
+
+$incomplete-color: $normal-gray;
+$blocked-color:    #2972d3;
+$complete-color:   #3cde59;
+
+
 // Borders
 $base-border-color: #e8e3df;
 
@@ -39,7 +46,7 @@ $primary-border-color: darken($primary-color, 8%);
 $primary-border-color-faded: darken($primary-color-faded, 8%);
 
 // Typography:
-$font-family-sans-serif: "Source Sans Pro", opensans, "Helvetica Neue",
+$font-family-sans-serif: "Roboto", opensans, "Helvetica Neue",
                           arial, sans-serif;
 $font-size-base: 16px;
 
@@ -59,5 +66,5 @@ $border-radius-rounded: 90px;
 
 // Grid
 $grid-gutter-width: 30px;
-$container-desktop: ((680px + $grid-gutter-width));
+$container-desktop: ((780px + $grid-gutter-width));
 $container-large-desktop: $container-desktop;

@@ -10,7 +10,7 @@ class Day
       raise "Attempt to get tasks without Day#user" if user.nil?
 
       # TODO
-      user.tasks
+      user.tasks.for_date(self.datetime)
     end
   end
 
@@ -51,8 +51,5 @@ class Day
       user:     user,
       datetime: date.to_date
     )
-  end
-
-  def self.collect(number, user)
   end
 end
